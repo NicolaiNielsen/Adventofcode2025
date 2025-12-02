@@ -4,14 +4,6 @@ def parse_instructions_from_file(path):
     return parse_instructions(text)
 
 def parse_instructions(text):
-    """
-    Parse instructions like:
-        R17
-        L19
-        R24
-        ...
-    into a list of tuples: [('R', 17), ('L', 19), ...]
-    """
     instructions = []
     for line in text.strip().splitlines():
         line = line.strip()
